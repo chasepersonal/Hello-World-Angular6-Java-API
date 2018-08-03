@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 
 	@RequestMapping("/api")
-	public Map getString() {
+	public Map<String, String> getString() {
         return Collections.singletonMap("response", "Hello World");
     }
 }
